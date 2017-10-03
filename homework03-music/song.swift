@@ -6,4 +6,18 @@
 //  Copyright © 2017 zhiliang_wang. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class song: NSObject{
+    @objc let artist:String
+    @objc let title:String
+    @objc let image:UIImage
+    @objc let musicFilePath:URL
+    @objc init(artist:String,title:String,image:UIImage,musicFilePath:URL){
+        self.artist = artist
+        self.title = title
+        self.image = image
+        self.musicFilePath = musicFilePath
+        
+    }
+}

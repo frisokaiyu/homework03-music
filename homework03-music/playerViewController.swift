@@ -8,11 +8,23 @@
 
 import UIKit
 
-class playerViewController: UIViewController {
+class playerViewController: UIViewController, mediaPlayerProtocol {
 
+    @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        mediaPlayer.setup()
+        
+    }
+    
+    func displaySong(_song:song){
+        
+    }
+    
+    func displayCompletionPercentage(_compPercentage:Float){
+        
     }
 
     override func didReceiveMemoryWarning() {
